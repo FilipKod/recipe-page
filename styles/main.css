@@ -10,22 +10,138 @@
 }
 
 .text-preset-1 {
-}
-
-.text-preset-2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 1;
 }
 
 .text-preset-3 {
-}
-
-.text-preset-4 {
-}
-
-.text-preset-4-bold {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+strong {
+  font-weight: 700;
+}
+
+html {
+  background-color: var(--color-stone-100);
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-stone-600);
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol,
+ul {
+  padding-left: 1.5rem;
+  display: grid;
+  row-gap: 8px;
+}
+
+ul li,
+ol li {
+  padding-left: 1rem;
+}
+
+.recipe {
+  background-color: var(--color-white);
+}
+
+.recipe__content {
+  padding: 2.5rem 2rem;
+  display: grid;
+  row-gap: 2rem;
+}
+
+.recipe__title {
+  color: var(--color-stone-900);
+}
+
+.recipe__divider {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-stone-150);
+}
+
+.recipe__description {
+  color: var(--color-stone-600);
+}
+
+.recipe__section {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.recipe__section.prep-time {
+  row-gap: 1rem;
+  background-color: var(--color-rose-50);
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: var(--color-stone-600);
+}
+
+.prep-time__title {
+  color: var(--color-rose-800);
+}
+
+.prep-time__list li::marker {
+  color: var(--color-rose-800);
+}
+
+.section-title {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: var(--color-brown-800);
+}
+
+.ingredients li::marker,
+.instructions li::marker {
+  color: var(--color-brown-800);
+}
+
+.instructions li::marker {
+  font-weight: 700;
+}
+
+.nutrition__table {
+  border-collapse: collapse;
+}
+
+.nutrition__table tr {
+  border-bottom: 1px solid var(--color-stone-150);
+}
+
+.nutrition__table tr:last-child {
+  border-bottom: none;
 }
